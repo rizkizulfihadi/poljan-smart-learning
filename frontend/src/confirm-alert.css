@@ -1,0 +1,40 @@
+/* custom-confirm-alert.css */
+
+/* Backdrop */
+.react-confirm-alert-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.react-confirm-alert-overlay.react-confirm-alert-fadeIn {
+    opacity: 1;
+}
+
+/* Popup */
+.react-confirm-alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Tema Light */
+.react-confirm-alert-light {
+    background-color: white;
+    color: black;
+}
+
+/* Tema Dark */
+.react-confirm-alert-dark {
+    background-color: black;
+    color: white;
+}
